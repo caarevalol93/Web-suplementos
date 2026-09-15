@@ -1,0 +1,174 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f7f9;
+    color:#333;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 60px;
+    background:#1b8f5a;
+}
+
+nav h1{
+    color:white;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:20px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.hero{
+    height:90vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),
+    url('https://images.unsplash.com/photo-1490645935967-10de6ba17061');
+    background-size:cover;
+    background-position:center;
+}
+
+.hero-content{
+    max-width:700px;
+    color:white;
+}
+
+.hero-content h2{
+    font-size:3rem;
+    margin-bottom:15px;
+}
+
+.hero-content p{
+    font-size:1.2rem;
+    margin-bottom:20px;
+}
+
+button{
+    background:#1b8f5a;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:8px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#136840;
+}
+
+section{
+    padding:60px 10%;
+}
+
+.vitaminas h2,
+.calculadora h2,
+.contacto h2,
+.beneficios h2{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card h3{
+    color:#1b8f5a;
+    margin-bottom:10px;
+}
+
+.calculadora{
+    text-align:center;
+    background:white;
+}
+
+.calculadora input{
+    padding:12px;
+    width:250px;
+    margin:15px;
+    border:1px solid #ccc;
+    border-radius:8px;
+}
+
+#resultado{
+    margin-top:20px;
+    color:#1b8f5a;
+}
+
+.beneficios ul{
+    max-width:700px;
+    margin:auto;
+    line-height:2;
+    font-size:18px;
+}
+
+.contacto form{
+    max-width:600px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.contacto input,
+.contacto textarea{
+    padding:15px;
+    border:1px solid #ccc;
+    border-radius:10px;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#1b8f5a;
+    color:white;
+}
+
+@media(max-width:768px){
+
+    nav{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .hero-content h2{
+        font-size:2rem;
+    }
+
+}
